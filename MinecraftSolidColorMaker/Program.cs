@@ -12,7 +12,7 @@ namespace MinecraftSolidColorMaker
     {
         private const int TextureSize = 16;
         private static string _savePath = Environment.CurrentDirectory;
-        private static bool _useOldTextureName = false;
+        private static bool _useOldTextureName = true;
 
         static void Main(string[] args)
         {
