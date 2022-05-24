@@ -30,12 +30,7 @@ namespace MinecraftSolidColorMaker
                 textures.AddRange(Directory.GetFiles(args[0], "*.png"));
             }
 
-            if (!string.IsNullOrEmpty(args[1]))
-            {
-                _useOldTextureName = args[1] == "--usetexturename";
-            }
-
-            string newSavePath = args[2];
+            string newSavePath = args[1];
 
             if(!string.IsNullOrEmpty(newSavePath))
             {
@@ -45,8 +40,6 @@ namespace MinecraftSolidColorMaker
                     Directory.CreateDirectory(newSavePath);
                 }                
             }
-
-            
 
             ProcessTextures(textures);
         }
