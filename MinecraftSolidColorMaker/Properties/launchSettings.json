@@ -2,7 +2,7 @@
   "profiles": {
     "MinecraftSolidColorMaker": {
       "commandName": "Project",
-      "commandLineArgs": "\"C:\\Users\\User\\Desktop\\New folder\""
+      "commandLineArgs": "\"C:\\Users\\User\\Desktop\\New folder\" \"C:\\Users\\User\\Desktop\\New folder2\" --usetexturename"
     }
   }
 }
