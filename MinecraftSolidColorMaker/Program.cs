@@ -29,8 +29,6 @@ namespace MinecraftSolidColorMaker
             }
 
             ProcessTextures(textures);
-
-            Console.ReadLine();
         }
 
         private static void ProcessTextures(List<string> textures)
@@ -41,27 +39,11 @@ namespace MinecraftSolidColorMaker
                 {
                     Rgba32 color = img[0, 0];
 
-                    //using (var img2 = img.Clone(ctx => ctx.(font, "A short piece of text", Color.HotPink, 5, false)))
-                    //{
-                    //    img2.Save("output/simple.png");
-                    //}
-
-
-                    CreateNewTexture(color);
-
-
+                    using (var newTexture = new Image<Rgba32>(TextureSize, TextureSize, color))
+                    {
+                        newTexture.SaveAsPng(@"C:\Users\User\Desktop\1.png");
+                    }
                 }
-            }
-        }
-
-        private static void CreateNewTexture(Rgba32 color)
-        {
-            using (var newTexture = new Image<Rgba32>(TextureSize, TextureSize, color))
-            {
-                //newTexture.Mutate(i => i.);
-                //var rectangle = new RectangleF(0, 0, TextureSize, TextureSize);
-                //newTexture.Mutate(i => i.);
-                newTexture.SaveAsPng(@"C:\Users\User\Desktop\1.png");
             }
         }
     }
