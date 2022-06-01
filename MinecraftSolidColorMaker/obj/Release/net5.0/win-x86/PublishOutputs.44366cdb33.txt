@@ -1,0 +1,2 @@
+F:\dev\code\dotnet\c#\vs solutions\.net 5\apps\misc\MinecraftSolidColorMaker\MinecraftSolidColorMaker\bin\Release\net5.0\publish\MinecraftSolidColorMaker.pdb
+F:\dev\code\dotnet\c#\vs solutions\.net 5\apps\misc\MinecraftSolidColorMaker\MinecraftSolidColorMaker\bin\Release\net5.0\publish\MinecraftSolidColorMaker.exe
