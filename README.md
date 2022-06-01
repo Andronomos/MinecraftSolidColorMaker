@@ -5,7 +5,7 @@ While working on my mods I often need to create solid color textures from vanill
 
 ### Usage
 
-`MinecraftSolidColorMaker.exe path-to-textures path-to-save-folder`
+Drop the `MinecraftSolidColorMaker.exe` into the folder with the Minecraft textures you want to convert and run it. Converted textures will be placed in a `output` folder in the same location.
 
 ### Dependencies
 SixLabors.ImageSharp
