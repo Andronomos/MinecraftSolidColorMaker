@@ -17,12 +17,7 @@ namespace MinecraftSolidColorMaker
         static void Main(string[] args)
         {
             List<string> textures = new();
-
-            if (Directory.Exists(args[0]))
-            {
-                textures.AddRange(Directory.GetFiles(Environment.CurrentDirectory, "*.png"));
-            }
-
+            textures.AddRange(Directory.GetFiles(Environment.CurrentDirectory, "*.png"));
             Directory.CreateDirectory(_savePath);
             ProcessTextures(textures);
         }
